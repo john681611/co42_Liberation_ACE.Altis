@@ -16,7 +16,7 @@ class Header
 {
 	gameType = CTI;
 	minPlayers = 1;
-	maxPlayers = 41;
+	maxPlayers = 43;
 };
 
 #include "GREUH\UI\GREUH_interface.hpp"
