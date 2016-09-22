@@ -1,5 +1,6 @@
 enableSaving [ false, false ];
-
+tf_no_auto_long_range_radio = true;
+tf_give_personal_radio_to_regular_soldier = true;
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\atlas_manager.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\liberation_functions.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\init_sectors.sqf";
