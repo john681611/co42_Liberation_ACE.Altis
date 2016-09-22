@@ -16,8 +16,8 @@ _newvehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
 
 {
 	_x createUnit [ getmarkerpos _spawnsector, _para_group, 'this addMPEventHandler ["MPKilled", {_this spawn kill_manager}]'];
-	if(!(backpack player == "B_Parachute")) then {
-		_unit addBackpackGlobal "B_Parachute";
+	if(!(backpack _x == "B_Parachute")) then {
+		_x addBackpackGlobal "B_Parachute";
 	};
 } foreach opfor_squad_8_paratroop;
 
