@@ -11,7 +11,7 @@ FOB_typename = "Land_Cargo_House_V1_F";						// Default "Land_Cargo_HQ_V1_F";
 FOB_box_typename = nil;					// Default "B_Slingload_01_Cargo_F";
 FOB_truck_typename = "rhsusf_M977A4_REPAIR_usarmy_wd";				// Default "B_Truck_01_box_F";
 Arsenal_typename = nil;					// Default "B_supplyCrate_F";
-Respawn_truck_typename = nil;			// Default "B_Truck_01_medical_F";
+Respawn_truck_typename = "rhsusf_m998_w_4dr_fulltop";			// Default "B_Truck_01_medical_F";
 huron_typename = "RHS_CH_47F";					// Default "B_Heli_Transport_03_unarmed_F";
 ammobox_b_typename = nil;				// Default "Box_NATO_AmmoVeh_F";
 ammobox_o_typename = nil;				// Default "Box_East_AmmoVeh_F";
@@ -42,11 +42,20 @@ light_vehicles_extension = [
 	["B_Quadbike_01_F",0,0,2],
 	["rhsusf_m1025_w",0,5,2],
 	["rhsusf_m1025_w_m2",0,10,3],
-	["rhsusf_m1025_w_mk19",15,0,3],
+	["rhsusf_m1025_w_mk19",0,15,3],
 	["rhsusf_m998_w_2dr_fulltop",0,5,3],
-	["rhsusf_M1078A1P2_B_M2_wd_fmtv_usarmy",0,0,5],
+	["rhsusf_M1083A1P2_B_wd_fmtv_usarmy",0,0,5],
+	["rhsusf_M1083A1P2_B_wd_flatbed_fmtv_usarmy",0,0,5],
+	["rhsusf_M1083A1P2_B_M2_wd_fmtv_usarmy",0,10,5],
+	["rhsusf_M1083A1P2_B_M2_wd_flatbed_fmtv_usarmy",0,10,5],
+	["rhsusf_M977A4_usarmy_wd",0,0,10],
+	["rhsusf_M977A4_BKIT_M2_usarmy_wd",0,10,10],
 	["rhsusf_M1117_W",0,15,5],
 	["rhsusf_rg33_m2_w",0,15,3],
+	["B_MRAP_01_F",0,5,5],
+	["B_MRAP_01_hmg_F",0,20,5],
+	["B_LSV_01_unarmed_F",0,5,3],
+	["B_LSV_01_armed_F",0,20,3],
 	["ACE_Wheel",0,0,0]
 ];
 
@@ -193,7 +202,7 @@ opfor_officer = "rhs_msv_emr_officer_armored";
 opfor_sharpshooter = "rhs_vmf_recon_marksman_vss";
 opfor_sniper = "rhs_vmf_recon_marksman_vss";
 opfor_engineer = "rhs_msv_emr_engineer";
-opfor_paratrooper = "O_soldier_PG_F";
+opfor_paratrooper = " rhs_vdv_mflora_rifleman_lite";
 
 // OPFOR Vehicles to be used in secondary objectives
 opfor_mrap = "rhs_tigr_msv";
@@ -247,8 +256,7 @@ opfor_vehicles_extension = [
 	"rhsgref_BRDM2_msv",
 	"rhsgref_BRDM2_ATGM_msv",
 	"rhs_t72ba_tv",
-	"rhs_t80bv",
-	"rhs_t90a_tv"
+	"rhs_t80bv"
 ];
 
 // Same with lighter choices to be used  when the alert level is low
@@ -258,8 +266,7 @@ opfor_vehicles_low_intensity_extension = [
 	"rhs_btr60_msv",
 	"rhs_prp3_msv",
 	"rhsgref_BRDM2_msv",
-	"rhsgref_BRDM2_ATGM_msv",
-	"rhs_t72ba_tv"
+	"rhsgref_BRDM2_ATGM_msv"
 ];
 
 // All the vehicles that can spawn as battlegroup members
@@ -279,7 +286,6 @@ opfor_battlegroup_vehicles_extension = [
 	"rhs_t80bv",
 	"RHS_Ural_MSV_01",
 	"rhs_gaz66_msv",
-	"rhs_t90a_tv",
 	"RHS_Mi24P_CAS_vdv"
 ];
 
@@ -374,7 +380,7 @@ elite_vehicles_extension = [
 	"RHS_A10",
 	"RHS_A10_AT",
 	"rhsusf_f22"
-	
+
 ];
 
 // Blacklisted arsenal items such as deployable weapons  that should be bought instead
