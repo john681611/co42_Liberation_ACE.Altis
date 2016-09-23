@@ -984,6 +984,13 @@
 						<Spanish>Multiplicador de recursos</Spanish>
 						<Russian>Множитель ресурсов</Russian>
 				</Key>
+				<Key ID="STR_PARAM_CALM">
+					<Original>Threat Reduction while empty</Original>
+					<French>*Threat Reduction while empty*</French>
+					<German>*Threat Reduction while empty*</German>
+					<Spanish>*Threat Reduction while empty*</Spanish>
+					<Russian>*Threat Reduction while empty*</Russian>
+				</Key>
 				<Key ID="STR_PARAMS_FATIGUE">
 						<Original>Stamina</Original>
 						<French>Stamina</French>
