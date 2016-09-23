@@ -80,7 +80,7 @@ _newvehicle flyInHeight 100;
 	moveout _x;
 	sleep 0.5;
 } foreach (units _para_group);
-
+diag_log "Troopers dropped";
 _newvehicle flyInHeight 100;
 
 sleep 0.2;

@@ -34,7 +34,7 @@ class Params
 		title = $STR_PARAMS_DAYDURATION;
 		values[] = { 48, 24, 16, 12, 9.6, 8, 6.8, 6, 4.8, 4, 3, 2.4, 2, 1.6, 1, 0.66, 0.5, 0.375, 0.25, 0.1875, 0.125, 0.11 };
 		texts[] = { "0.5", "1", "1.5", "2", "2.5", "3","3.5","4","5","6","8","10","12","15","24","36","48","64","96","128","192","240" };
-		default = 12;
+		default = 6;
 	};
 	class ShorterNights {
 		title = $STR_SHORTER_NIGHTS_PARAM;
@@ -132,6 +132,12 @@ class Params
 		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
 		default = 10;
 	};
+	class IdleCalm{
+		title = $STR_PARAM_CALM;
+		values[] = {1,0};
+		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
+		default = 1;
+	}
 	class Space2 {
 		title = "";
 		values[] = { "" };
