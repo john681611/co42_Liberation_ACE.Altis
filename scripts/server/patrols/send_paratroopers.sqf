@@ -12,17 +12,18 @@ private _para_group = createGroup GRLIB_side_enemy;
 
 _newvehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
 { _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]; } foreach (crew _newvehicle);
-//opfor_squad_8_paratroop
-
+diag_log "Helo made";
 {
-	_x createUnit [ getmarkerpos _spawnsector, _para_group, 'this addMPEventHandler ["MPKilled", {_this spawn kill_manager}]'];
+	 _x createUnit [ getmarkerpos _spawnsector, _para_group, 'this addMPEventHandler ["MPKilled", {_this spawn kill_manager}]'];
+} foreach opfor_squad_8_paratroop;
+diag_log "Troopers spawned";
+{
+	_x moveInCargo _newvehicle;
 	if(!(backpack _x == "B_Parachute")) then {
 		_x addBackpackGlobal "B_Parachute";
 	};
-} foreach opfor_squad_8_paratroop;
-
-{ _x moveInCargo _newvehicle } foreach (units _para_group);
-
+} foreach (units _para_group);
+diag_log "Troopers loaded";
 while {(count (waypoints _pilot_group)) != 0} do {deleteWaypoint ((waypoints _pilot_group) select 0);};
 while {(count (waypoints _para_group)) != 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
 sleep 0.2;
