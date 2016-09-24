@@ -15,3 +15,4 @@ wait_to_spawn_sector = compileFinal preprocessFileLineNumbers "scripts\server\se
 
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\synchronise_vars.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\show_fps.sqf";
+[] spawn compileFinal preprocessFileLineNumbers "scripts\server\game\clean.sqf";
