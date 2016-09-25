@@ -15,7 +15,7 @@ Respawn_truck_typename = "rhsusf_m998_w_4dr_fulltop";			// Default "B_Truck_01_m
 huron_typename = "RHS_CH_47F";					// Default "B_Heli_Transport_03_unarmed_F";
 ammobox_b_typename = nil;				// Default "Box_NATO_AmmoVeh_F";
 ammobox_o_typename = nil;				// Default "Box_East_AmmoVeh_F";
-opfor_ammobox_transport = "rhs_gaz66_ap2_msv";			// Default "O_Truck_03_transport_F";    // Make sure this thing can transport ammo boxes (see box_transport_config down below) otherwise things will break
+opfor_ammobox_transport = "rhs_gaz66o_flat_msv";			// Default "O_Truck_03_transport_F";    // Make sure this thing can transport ammo boxes (see box_transport_config down below) otherwise things will break
 commander_classname = "rhsusf_army_ocp_teamleader";				// Default "B_officer_F"
 crewman_classname = "rhsusf_army_ocp_combatcrewman";				// Default "B_crew_F";
 pilot_classname = "rhsusf_army_ocp_helipilot";					// Default "B_Helipilot_F";
@@ -253,8 +253,10 @@ opfor_vehicles_extension = [
 	"rhs_btr80a_msv",
 	"rhs_brm1k_msv",
 	"rhs_prp3_msv",
+	"rhs_zsu234_aa",
 	"rhsgref_BRDM2_msv",
 	"rhsgref_BRDM2_ATGM_msv",
+	"rhs_sprut_vdv",
 	"rhs_t72ba_tv",
 	"rhs_t80bv"
 ];
@@ -265,6 +267,7 @@ opfor_vehicles_low_intensity_extension = [
 	"rhs_tigr_sts_msv",
 	"rhs_btr60_msv",
 	"rhs_prp3_msv",
+	"rhs_bmp2_msv",
 	"rhsgref_BRDM2_msv",
 	"rhsgref_BRDM2_ATGM_msv"
 ];
@@ -273,19 +276,33 @@ opfor_vehicles_low_intensity_extension = [
 opfor_battlegroup_vehicles_overwrite = true;
 opfor_battlegroup_vehicles_extension = [
 	"rhs_tigr_sts_msv",
+	"rhs_tigr_msv",
+	"rhs_tigr_msv",
 	"rhs_bmp3_msv",
+	"rhs_bmp2_msv",
+	"rhs_bmd2",
+	"rhs_bmd4_vdv",
 	"rhs_btr60_msv",
 	"rhs_btr70_msv",
 	"rhs_btr80_msv",
 	"rhs_btr80a_msv",
 	"rhs_brm1k_msv",
 	"rhs_prp3_msv",
+	"rhs_zsu234_aa",
 	"rhsgref_BRDM2_msv",
 	"rhsgref_BRDM2_ATGM_msv",
+	"RHS_Ural_MSV_01",
+	"RHS_Ural_Open_MSV_01",
+	"RHS_Ural_MSV_01",
+	"RHS_Ural_Open_MSV_01",
+	"rhs_gaz66_msv",
+	"rhs_gaz66o_msv",
+	"rhs_gaz66_msv",
+	"rhs_gaz66o_msv",
+	"rhs_sprut_vdv",
 	"rhs_t72ba_tv",
 	"rhs_t80bv",
-	"RHS_Ural_MSV_01",
-	"rhs_gaz66_msv",
+	"rhs_t90a_tv",
 	"RHS_Mi24P_CAS_vdv"
 ];
 
@@ -293,20 +310,22 @@ opfor_battlegroup_vehicles_extension = [
 opfor_battlegroup_vehicles_low_intensity_overwrite = true;
 opfor_battlegroup_vehicles_low_intensity_extension = [
 	"rhs_tigr_sts_msv",
-	"rhs_bmp3_msv",
+	"rhs_tigr_msv",
+	"rhs_tigr_msv",
 	"rhs_btr60_msv",
-	"rhs_btr70_msv",
-	"rhs_btr80_msv",
-	"rhs_btr80a_msv",
 	"rhs_brm1k_msv",
 	"rhs_prp3_msv",
+	"rhs_bmp2_msv",
 	"rhsgref_BRDM2_msv",
 	"rhsgref_BRDM2_ATGM_msv",
 	"RHS_Ural_MSV_01",
+	"RHS_Ural_Open_MSV_01",
+	"RHS_Ural_MSV_01",
+	"RHS_Ural_Open_MSV_01",
 	"rhs_gaz66_msv",
-	"rhs_t72ba_tv",
-	"rhs_t80bv",
-	"rhs_t90a_tv"
+	"rhs_gaz66o_msv",
+	"rhs_gaz66_msv",
+	"rhs_gaz66o_msv"
 ];
 
 // All the vehicles that can spawn as battlegroup members (see above) and also hold 8 soldiers as passengers.
@@ -314,14 +333,30 @@ opfor_battlegroup_vehicles_low_intensity_extension = [
 opfor_troup_transports_overwrite = true;
 opfor_troup_transports_extension = [
 	"RHS_Ural_MSV_01",
+	"RHS_Ural_Open_MSV_01",
 	"rhs_gaz66_msv",
-	"RHS_Mi24P_CAS_vdv"
+	"rhs_gaz66o_msv",
+	"rhs_btr60_msv",
+	"rhs_btr60_msv",
+	"rhs_btr70_msv",
+	"rhs_btr80_msv",
+	"rhs_btr80a_msv",
+	"rhs_tigr_msv",
+	"rhs_bmp3_msv",
+	"rhs_bmp2_msv",
+	"rhs_bmd2",
+	"rhs_bmd4_vdv",
+	"RHS_Mi24P_CAS_vdv",
+	"RHS_Mi8mt_vdv",
+	"RHS_Mi8MTV3_UPK23_vdv"
 ];
 
 // Battlegroup members that will need to spawn in flight. Should be only helos but, who knows
 opfor_choppers_overwrite = false;
 opfor_choppers_extension = [
-	"RHS_Mi24P_CAS_vdv"
+	"RHS_Mi24P_CAS_vdv",
+	"RHS_Mi8mt_vdv",
+	"RHS_Mi8MTV3_UPK23_vdv"
 ];
 
 // Opfor military aircrafts
@@ -331,7 +366,8 @@ opfor_air_extension = [
 	"RHS_Mi8AMT_vdv",
 	"RHS_Mi8MTV3_FAB_vdv",
 	"RHS_Ka52_vvsc",
-	"RHS_Su25SM_vvsc"
+	"RHS_Su25SM_vvsc",
+	"RHS_T50_vvs_blueonblue"
 ];
 
 
@@ -409,7 +445,9 @@ blacklisted_from_arsenal_extension = [
 	"RHS_SPG9_Gun_Bag",
 	"RHS_SPG9_Tripod_Bag",
 	"rhs_Tow_Gun_Bag",
-	"rhs_TOW_Tripod_Bag"
+	"rhs_TOW_Tripod_Bag",
+	"RHS_Kornet_Gun_Bag",
+	"RHS_Kornet_Tripod_Bag"
 ];
 
 // Configuration for ammo boxes transport
@@ -417,5 +455,12 @@ blacklisted_from_arsenal_extension = [
 // Second entry: how far behind the vehicle the boxes should be unloaded
 // Following entries: attachTo position for each box, the number of boxes that can be loaded is derived from the number of entries
 box_transport_config_extension = [
-	[ "greuh_eh101_gr", -6.5, [0,	4.2,	-1.45], [0,	2.5,	-1.45], [0,	0.8, -1.45], [0,	-0.9, -1.45] ]
+	[ "greuh_eh101_gr", -6.5, [0,	4.2,	-1.45], [0,	2.5,	-1.45], [0,	0.8, -1.45], [0,	-0.9, -1.45] ],
+	["rhsusf_M1083A1P2_B_wd_flatbed_fmtv_usarmy",-4.1,[0,0,0.6],[0,-2,0.6]],
+	["rhsusf_M1083A1P2_B_M2_wd_flatbed_fmtv_usarmy",-4.1,[0,0,0.6],[0,-2,0.6]],
+	["rhsusf_M977A4_usarmy_wd",-7.6,[0,-1,1.5],[0,-2.5,1.5],[0,-4,1.5]],
+	["rhsusf_M977A4_BKIT_M2_usarmy_wd",-6.1,[0,0.45,1.15],[0,-1.05,1.15],[0,-2.55,1.15]],
+	["RHS_CH_47F",-9,[0,3,-1.9],[0,1.5,-1.9],[0,0,-1.9],[0,-1.5,-1.9],[0,-3,-1.9]],
+	["rhsusf_CH53E_USMC_D",-10,[0,2.8,1.6],[0,1.3,1.6],[0,-0.2,1.6],[0,-1.7,1.6],[0,-3.2,1.6],[0,-4.7,1.6]],
+	["rhs_gaz66o_flat_msv",-3.5,[0,-0.2,0.5],[0,-1.7,0.5]]
 ];
