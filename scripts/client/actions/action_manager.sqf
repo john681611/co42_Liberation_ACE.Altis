@@ -32,8 +32,9 @@ while { true } do {
 	};
 
 	_neararsenal = [ ( (getpos player) nearobjects [ Arsenal_typename, _distarsenal ]), { getObjectType _x >= 8 } ] call BIS_fnc_conditionalSelect;
-	_nearfobbox = ( (getpos player) nearEntities [ [ FOB_box_typename, FOB_truck_typename ] , _distbuildfob ] );
-	_nearspawn = ( (getpos player) nearEntities [ [ Respawn_truck_typename, huron_typename ] , _distspawn ] );
+	_nearfobbox = [ ( (getpos player) nearEntities [ [FOB_box_typename,FOB_truck_typename], _distspawn ]), { (typeof _x == FOB_box_typename) ||typeof _x == FOB_truck_typename } ] call BIS_fnc_conditionalSelect;
+	_nearspawn = [ ( (getpos player) nearEntities [ [Respawn_truck_typename,huron_typename], _distspawn ]), { (typeof _x == Respawn_truck_typename) ||typeof _x == huron_typename } ] call BIS_fnc_conditionalSelect;
+
 
 	if ( GRLIB_removefobboxes ) then {
 		GRLIB_removefobboxes = false;
