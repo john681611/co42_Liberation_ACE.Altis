@@ -32,15 +32,34 @@ pilot_classname = "rhsusf_army_ocp_helipilot";					// Default "B_Helipilot_F";
 
 // If overwrite is set to true, then the extension list will entirely replace the original list defined in classnames.sqf. Otherwise it will be appended to it.
 // Useful for total conversions to RHS and such, without having to alter the original file.
-infantry_units_overwrite = false;
+infantry_units_overwrite = true;
 infantry_units_extension = [
-
+	["rhsusf_army_ocp_rifleman",0,0,1],
+	["rhsusf_army_ocp_riflemanat",0,0,1],
+	["rhsusf_army_ocp_autorifleman",0,0,1],
+	["rhsusf_army_ocp_machinegunner",0,0,1],
+	["rhsusf_army_ocp_autoriflemana",0,0,1],
+	["rhsusf_army_ocp_rifleman_m590",0,0,1],
+	["rhsusf_army_ocp_medic",0,0,1],
+	["rhsusf_army_ocp_engineer",0,0,1],
+	["rhsusf_army_ocp_grenadier",0,0,1],
+	["rhsusf_army_ocp_sniper",0,0,1],
+	["rhsusf_army_ocp_marksman",0,0,1],
+	["rhsusf_army_ocp_combatcrewman",0,0,1],
+	["rhsusf_army_ocp_helipilot",0,0,1],
+	["rhsusf_army_ocp_rifleman_m590",0,0,1],
+	["rhsusf_socom_marsoc_cso",0,0,2],
+	["rhsusf_socom_marsoc_cso_cqb",0,0,2],
+	["rhsusf_socom_marsoc_sarc",0,0,2],
+	["rhsusf_socom_marsoc_cso_grenadier",0,0,2],
+	["rhsusf_socom_marsoc_spotter",0,0,2],
+	["rhsusf_socom_marsoc_jtac",0,0,2]
 ];
 
 light_vehicles_overwrite = true;
 light_vehicles_extension = [
 	["B_Quadbike_01_F",0,0,2],
-	["rhsusf_m1025_w",0,5,2],
+	["rhsusf_m1025_w",0,0,3],
 	["rhsusf_m1025_w_m2",0,10,3],
 	["rhsusf_m1025_w_mk19",0,15,3],
 	["rhsusf_m998_w_2dr_fulltop",0,5,3],
@@ -56,6 +75,9 @@ light_vehicles_extension = [
 	["B_MRAP_01_hmg_F",0,20,5],
 	["B_LSV_01_unarmed_F",0,5,3],
 	["B_LSV_01_armed_F",0,20,3],
+	["B_Boat_Transport_01_F",0,0,2],
+	["B_Boat_Armed_01_minigun_F",0,25,3],
+	["rhsusf_mkvsoc",0,55,3],
 	["ACE_Wheel",0,0,0]
 ];
 
@@ -352,7 +374,7 @@ opfor_troup_transports_extension = [
 ];
 
 // Battlegroup members that will need to spawn in flight. Should be only helos but, who knows
-opfor_choppers_overwrite = false;
+opfor_choppers_overwrite = true;
 opfor_choppers_extension = [
 	"RHS_Mi24P_CAS_vdv",
 	"RHS_Mi8mt_vdv",
