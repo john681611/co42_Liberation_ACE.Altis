@@ -51,7 +51,23 @@ do_load_box = compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\d
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\ui\tutorial_manager.sqf";
 
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
-
+player createDiarySubject ["TeamSpeak & TFAR","TeamSpeak & TFAR"];
+player createDiaryRecord ["TeamSpeak & TFAR", ["TeamSpeak & TFAR","We highly Reccomend using Teamspeak and the TFAR mod <br/>
+TS server: 81.19.212.66 <br/>
+Channle: Arma 3 Liberation Server/BLUFOR <br/>
+<br/>
+TFAR Frequencies
+Short range: <br/>
+Alpha/Normal: 100 <br/>
+Bravo Squad: 200 <br/>
+Charlie Squad 300 (not used by INF atm) <br/>
+Emergency: 66 <br/>
+<br/>
+Long range: <br/>
+Ground Vehicles: 40 <br/>
+Aircaft: 50 <br/>
+Emergency: 66 <br/>
+"]];
 {
 	[_x] call BIS_fnc_drawCuratorLocations;
 } foreach allCurators;
