@@ -53,7 +53,7 @@ do_load_box = compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\d
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
 player createDiarySubject ["TeamSpeak & TFAR","TeamSpeak & TFAR"];
 player createDiaryRecord ["TeamSpeak & TFAR", ["TeamSpeak & TFAR","We highly Reccomend using Teamspeak and the TFAR mod <br/>
-TS server: 81.19.212.66 <br/>
+TS server: ts3.iron-fists.eu OR 81.19.212.66 <br/>
 Channle: Arma 3 Liberation Server/BLUFOR <br/>
 <br/>
 TFAR Frequencies

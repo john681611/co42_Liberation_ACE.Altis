@@ -47,7 +47,6 @@ infantry_units_extension = [
 	["rhsusf_army_ocp_marksman",0,0,1],
 	["rhsusf_army_ocp_combatcrewman",0,0,1],
 	["rhsusf_army_ocp_helipilot",0,0,1],
-	["rhsusf_army_ocp_rifleman_m590",0,0,1],
 	["rhsusf_socom_marsoc_cso",0,0,2],
 	["rhsusf_socom_marsoc_cso_cqb",0,0,2],
 	["rhsusf_socom_marsoc_sarc",0,0,2],
@@ -168,35 +167,63 @@ uavs = [
 
 ];
 
+
 // Pre-made squads for the commander build menu. These shouldn't exceed 10 members.
 // Light infantry squad
 blufor_squad_inf_light = [
-
+"rhsusf_army_ocp_teamleader",
+"rhsusf_army_ocp_rifleman",
+"rhsusf_army_ocp_riflemanat",
+"rhsusf_army_ocp_autorifleman",
+"rhsusf_army_ocp_medic",
+"rhsusf_army_ocp_grenadier"
 ];
 
 // Heavy infantry squad
 blufor_squad_inf = [
-
+"rhsusf_army_ocp_squadleader",
+"rhsusf_army_ocp_rifleman",
+"rhsusf_army_ocp_riflemanat",
+"rhsusf_army_ocp_autorifleman",
+"rhsusf_army_ocp_machinegunner",
+"rhsusf_army_ocp_medic",
+"rhsusf_army_ocp_grenadier",
+"rhsusf_army_ocp_javelin",
+"rhsusf_army_ocp_aa",
+"rhsusf_army_ocp_marksman"
 ];
 
 // AT specialists squad
 blufor_squad_at = [
-
+"rhsusf_army_ocp_teamleader",
+"rhsusf_army_ocp_riflemanat",
+"rhsusf_army_ocp_javelin",
+"rhsusf_army_ocp_javelin",
+"rhsusf_army_ocp_autorifleman"
 ];
 
 // AA specialists squad
 blufor_squad_aa = [
-
+"rhsusf_army_ocp_teamleader",
+"rhsusf_army_ocp_rifleman",
+"rhsusf_army_ocp_aa",
+"rhsusf_army_ocp_aa"
 ];
 
 // Force recon squad
 blufor_squad_recon = [
-
+"rhsusf_army_ocp_sniper",
+"rhsusf_socom_marsoc_spotter"
 ];
 
 // Paratroopers squad
 blufor_squad_para = [
-
+"rhsusf_socom_marsoc_cso",
+"rhsusf_socom_marsoc_cso_cqb",
+"rhsusf_socom_marsoc_sarc",
+"rhsusf_socom_marsoc_cso_grenadier",
+"rhsusf_socom_marsoc_spotter",
+"rhsusf_socom_marsoc_jtac"
 ];
 
 
