@@ -2,9 +2,9 @@ private [ "_lhd_x", "_lhd_y", "_lhd_z", "_spread", "_rotation", "_posx", "_posy"
 
 if ( GRLIB_isAtlasPresent ) then {
 
-	_lhd_x = 6;
-	_lhd_y = -16;
-	_lhd_z = 16.5;
+	_lhd_x = 20;
+	_lhd_y = -117;
+	_lhd_z = 23;
 	_spread = 6;
 
 	_lhd_z = _lhd_z + (getposasl lhd select 2);
